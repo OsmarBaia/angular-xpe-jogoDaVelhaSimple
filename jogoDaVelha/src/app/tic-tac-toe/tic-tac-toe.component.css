@@ -1,0 +1,42 @@
+.title{
+  width: 12em;
+  margin: .5em .5em 0 .5em;
+  padding: .5em;
+  border: .1em solid black;
+  border-bottom: .1em solid lightgray;
+}
+
+#title-name{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.box{
+
+  width: 12em;
+  height: 12em;
+
+  margin: 0 .5em;
+  padding:.5em;
+  border: .1em solid black;
+  border-top: .1em solid lightgray;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item{
+  width: 3em;
+  height: 3em;
+
+  margin: .3em;
+  border: .1em solid black;
+
+  background-color: lightgray;
+
+  text-align: center;
+  line-height: 3em;
+}
