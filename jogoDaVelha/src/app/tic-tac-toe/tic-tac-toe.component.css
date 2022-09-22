@@ -6,6 +6,10 @@
   border-bottom: .1em solid lightgray;
 }
 
+#bt-reiniciar{
+  margin-left: 5em;
+}
+
 #title-name{
   text-align: center;
   font-size: 1.2em;

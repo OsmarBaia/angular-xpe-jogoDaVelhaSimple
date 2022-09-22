@@ -1,16 +1,17 @@
 <div class="title">
   <p id="title-name">Jogo Da Velha</p>
-  <p >Jogador Atual: <span id="player">O</span></p>
-  <p>Vencedor: <span id="winner">-</span></p>
+  <p >Jogador Atual: {{currentPlayer}}</p>
+  <p>Vencedor: {{winnerPlayer}}</p>
+  <button id="bt-reiniciar" (click)="ReiniciarTabuleiro()">Reiniciar</button>
 </div>
 <div class="box">
-  <div class="item" id="11">-</div>
-  <div class="item" id="12">-</div>
-  <div class="item" id="13">-</div>
-  <div class="item" id="21">-</div>
-  <div class="item" id="22">-</div>
-  <div class="item" id="23">-</div>
-  <div class="item" id="31">-</div>
-  <div class="item" id="32">-</div>
-  <div class="item" id="33">-</div>
+  <div class="item" id="11" (click)="MarcarQuadrado(0,0)">{{boardMap[0][0]}}</div>
+  <div class="item" id="12" (click)="MarcarQuadrado(0,1)">{{boardMap[0][1]}}</div>
+  <div class="item" id="13" (click)="MarcarQuadrado(0,2)">{{boardMap[0][2]}}</div>
+  <div class="item" id="21" (click)="MarcarQuadrado(1,0)">{{boardMap[1][0]}}</div>
+  <div class="item" id="22" (click)="MarcarQuadrado(1,1)">{{boardMap[1][1]}}</div>
+  <div class="item" id="23" (click)="MarcarQuadrado(1,2)">{{boardMap[1][2]}}</div>
+  <div class="item" id="31" (click)="MarcarQuadrado(2,0)">{{boardMap[2][0]}}</div>
+  <div class="item" id="32" (click)="MarcarQuadrado(2,1)">{{boardMap[2][1]}}</div>
+  <div class="item" id="33" (click)="MarcarQuadrado(2,2)">{{boardMap[2][2]}}</div>
 </div>
